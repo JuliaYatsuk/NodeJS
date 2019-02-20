@@ -54,7 +54,6 @@ dishRouter.route('/:dishId')
         res.json(dish);
     }, (err) => next(err))
     .catch((err) => next(err));
-    //res.end('Will send details of the dish: ' + req.params.dishID+' to you');
 })
 
 .post( (req, res, next) => {
@@ -72,8 +71,6 @@ dishRouter.route('/:dishId')
         res.json(dish);
     }, (err) => next(err))
     .catch((err) => next(err));
-    //res.write('Updating the dish: '+req.params.dishID );
-    //res.end('\nWill update the dish: '+ req.body.name + ' with details: ' + req.body.description);
 })
 
 .delete( (req, res, next) => {
@@ -84,7 +81,7 @@ dishRouter.route('/:dishId')
         res.json(resp);
     }, (err) => next(err) )
     .catch((err) => next(err));
-    //res.end('Deleting  dish '+req.params.dishID);
+   
 });
 
 
